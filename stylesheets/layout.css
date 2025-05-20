@@ -4,13 +4,17 @@
 body {
   background-color: white;
 }
-
 .num-1 {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 48px;
-  line-height: 58px;
   font-weight: 700;
+  margin-left: 30px;
+}
+.header {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 35px;
 }
 .main-menu {
   width: 90%;
