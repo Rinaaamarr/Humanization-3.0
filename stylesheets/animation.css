@@ -1,0 +1,6 @@
+/* Рисование векторов - мейн */
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

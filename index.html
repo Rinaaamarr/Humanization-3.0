@@ -6,8 +6,271 @@
     <title>Humanization</title>
     <link rel="stylesheet" href="stylesheets/style.css" />
     <script src="javascript/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
   </head>
   <body>
+    <!-- навигация -->
+    <nav>
+      <div class="nav-background"></div>
+      <div class="pages">
+        <a href="pages/about.html">[ О НАС ]</a>
+        <a href="pages/merch.html">[ МЕРЧ ]</a>
+        <a href="pages/tickets.html">[ БИЛЕТЫ ]</a>
+        <a href="index.html"><img src="images/logo-main.svg" alt="" /></a>
+        <a href="pages/adult.html">[ ОБРАЗОВАНИЕ ]</a>
+        <div class="dropdown">
+          <p class="dropbtn">[ МУЗЕЙ ▾ ]</p>
+          <div class="dropdown-content">
+            <a href="pages/employees.html">[ СОТРУДНИКИ ]</a>
+            <a href="pages/partner.html">[ ПАРТНЁР ]</a>
+          </div>
+        </div>
+        <p class="english">[ EN ]</p>
+      </div>
+    </nav>
+    <!-- секция 1 -->
+    <section class="introduction">
+      <div class="mouse-parallax">
+        <div class="mouse-parallax-bg"></div>
+        <div class="mouse-parallax-image-1"></div>
+        <div class="mouse-parallax-image-2"></div>
+        <div class="mouse-parallax-image-3"></div>
+        <div class="mouse-parallax-image-4"></div>
+      </div>
+      <p class="heading1">Humanization</p>
+      <img class="tire" src="images/tire.svg" alt="" />
+      <div class="words">
+        <div class="word1">Сознание</div>
+        <!-- <div class="word2">Диалог</div>
+        <div class="word3">Механизм</div>
+        <div class="word4">Связь</div>
+        <div class="word5">Мы</div> -->
+      </div>
+      <p class="text-1">
+        Центр толерантности, где <b>люди</b> <br />
+        и <b>искусственный интеллект</b> учатся <br />понимать друг друга.
+      </p>
+      <p class="text-2">
+        Мы строим мост между <b>технологиями</b> <br />
+        и <b>человечностью,</b> чтобы вместе двигаться <br />
+        к более чуткому, осознанному будущему.
+      </p>
+    </section>
+    <!-- секция 2 -->
+    <section class="events-main">
+      <p class="events">События</p>
 
+      <!-- flip 1 -->
+      <div class="frame-1">
+        <div class="card__inner">
+          <div class="card__face card__face--front">
+            <img src="images/poster-1-main.svg" alt="" />
+          </div>
+          <div class="card__face card__face--back">
+            <div class="card__content">
+              <div class="card__text">
+                <p>
+                  Исследуем природу <br />
+                  свободы <br />
+                  и стремления <br />
+                  к равенству <br />
+                  с Создателем. <br />
+                  Где проходит грань <br />
+                  между свободой <br />
+                  воли и опасным <br />
+                  вирусом сознания?
+                </p>
+              </div>
+              <div class="card__logo">
+                <img src="images/adult-symbol.svg" alt="" class="adult" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- flip 2 -->
+      <div class="frame-2">
+        <div class="card__inner-2">
+          <div class="card__face2 card__face--front2">
+            <img src="images/poster-2-main.svg" alt="" />
+          </div>
+          <div class="card__face2 card__face--back2">
+            <div class="card__content2">
+              <div class="card__text2">
+                <p>
+                  Что происходит, когда <br />
+                  искусственный <br />
+                  интеллект начинает <br />
+                  чувствовать? Лекция <br />об эмоциональном <br />
+                  пробуждении машин <br />
+                  и его последствиях.
+                </p>
+              </div>
+              <div class="card__logo2">
+                <img src="images/adult-symbol.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- названия -->
+      <div class="event1">
+        <div class="name1"><p>Свобода: вирус или право?</p></div>
+        <div class="date1"><p>27.06.25</p></div>
+        <div class="tags">
+          <div class="discussion">
+            <p>Дискуссия</p>
+          </div>
+          <div class="law">
+            <p>Право</p>
+          </div>
+        </div>
+      </div>
+      <div class="event2">
+        <div class="name2"><p>Эмоции ИИ: Введение</p></div>
+        <div class="date2"><p>10.07.25</p></div>
+        <div class="tags">
+          <div class="lecture">
+            <p>Лекция</p>
+          </div>
+          <div class="psychology">
+            <p>Психология</p>
+          </div>
+        </div>
+      </div>
+      <!-- переход в разделы образования -->
+      <div class="buttons">
+        <div class="separator"></div>
+        <div class="adults">
+          <div class="logo-adult">
+            <img src="images/logo-button-main.svg" alt="" />
+          </div>
+          <a id="link" class="link-adults" href="pages/adult.html"
+            >[ ВЗРОСЛЫМ ]</a
+          >
+        </div>
+        <div class="kids">
+          <div class="logo-kids">
+            <img src="images/kids-symbol.svg" alt="" />
+          </div>
+          <a id="link" class="link-kids" href="pages/kids.html">[ ДЕТЯМ ]</a>
+        </div>
+      </div>
+    </section>
+    <!-- секция 3 -->
+    <section class="main-quote">
+      <p class="quote">
+        Мы не боимся машин. Мы <br />
+        боимся того, что они <br />
+        научатся быть похожими <br />
+        на нас — а мы забудем, <br />
+        как быть людьми.
+      </p>
+      <div class="lines">
+        <div class="line1">
+          <svg
+            width="346"
+            height="15"
+            viewBox="0 0 346 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0.878906 6.69046C1.15159 6.69046 1.42426 6.69046 19.1525 6.41779C36.8808 6.14511 72.0564 5.59975 90.8588 5.45515C109.661 5.31054 111.025 5.58322 118.135 5.72369C138.058 6.11729 152.902 6.13684 156.335 6.54999C163.873 7.45711 175.972 7.51676 197.402 8.20259C209.704 8.5963 231.797 8.34306 243.72 8.4794C255.644 8.61574 256.734 8.88842 271.748 9.02889C286.762 9.16936 315.666 9.16936 345.446 9.16936"
+              stroke="#0026FF"
+              stroke-width="10"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <div class="line2">
+          <svg
+            width="375"
+            height="100"
+            viewBox="0 0 375 100"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10 40C11 35.5 21.7264 22.6537 26.7427 19.5C31.9505 16.1831 51.4681 12.8017 56.0396 11.5952C61.6135 10.1241 67.3726 9.53965 72.9122 8.28927C77.7699 7.19282 84.2685 6.95805 92.4937 5.90351C96.7913 5.35253 117.238 4.67289 145.54 5.17622C156.074 5.36355 159.27 5.82161 162.887 5.90902C170.41 6.09085 184.605 6.96199 201.517 9.22595C219.256 11.6007 227.153 11.4225 247.078 12.89C259.497 13.8046 273.159 13.4158 287.991 15.0939C296.075 16.0086 304.903 16.4717 312.231 18.7745C323.346 22.2677 329.151 23.414 334.112 24.8298C340.58 26.6756 348.729 26.549 356.386 34.2241C364.621 42.4778 366.764 46.8747 368.202 51.2881C369.64 55.7014 370.818 63.1588 369.268 69.1069C368.552 71.8563 366.794 76.7969 361.335 79.5811C350.554 85.0799 341.38 88.1354 330.288 89.4768C321.085 90.5898 309.055 93.9284 281.722 94.8048C264.71 95.3503 254.737 94.5969 249.103 94.4301C230.307 93.8736 222.407 92.3228 201.328 92.6008C186.707 92.7937 160.049 93.8674 145.987 93.6973C130.504 93.51 118.283 92.6131 105.316 92.2262C86.6666 91.6697 78.7947 90.3698 67.8391 89.6531C53.8585 88.7384 31.4204 87.9988 26.7427 85.2397C22.0628 82.4793 15.3772 79.7005 8.24909 70.7158C5.92796 67.79 4.17986 63.186 5.40019 57.8558C6.66038 52.3515 8.60578 46.274 10 40Z"
+              stroke="#0026FF"
+              stroke-width="10"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <div class="line3">
+          <svg
+            width="462"
+            height="39"
+            viewBox="0 0 462 39"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.22266 20.283C26.7703 13.7851 41.5821 10.7987 45.4053 11.5261C51.0361 12.5975 62.301 20.2392 74.2029 24.2868C81.6817 26.8301 88.599 25.7526 94.6374 24.3032C102.892 22.3218 107.94 16.6512 112.693 12.8224C116.719 9.57892 121.439 8.62176 127.089 7.16137C136.833 4.64285 150.953 7.50596 162.078 11.3347C168.672 13.6041 173.575 16.9793 180.5 21.7215C190.613 28.6473 196.548 29.3845 202.023 31.0363C211.138 33.7864 219.52 25.7745 225.722 21.3933C233.194 16.1161 241.026 11.9254 248.509 8.44126C261.572 2.35857 281.152 8.59988 287.71 10.7932C295.759 13.4851 306.268 18.7953 313.061 21.3715C319.779 23.9189 331.078 20.3049 337.489 16.8317C344.455 13.0572 350.419 11.1815 360.609 9.52972C381.531 6.13811 386.89 11.1597 391.824 12.9811C399.077 15.6586 405.239 34.6521 413.528 33.3937C426 31.5 424.45 30.1064 429.203 27.5576C433.844 25.0692 443.053 18.839 448.522 14.8298C449.988 13.7304 451.432 12.6474 452.898 11.909C454.364 11.1706 455.808 10.8096 459.483 9.34375"
+              stroke="#0026FF"
+              stroke-width="10"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+      </div>
+    </section>
+    <!-- секция 4 -->
+    <section class="follow">
+      <div class="separator1"><img src="images/separator1.svg" alt="" /></div>
+      <p class="call">
+        Подпишитесь и получайте <br />
+        новости музея первыми
+      </p>
+      <input
+        type="email"
+        name="email"
+        value=""
+        placeholder="Введите ваш email"
+      />
+      <button class="follow-up">Подписаться —></button>
+      <div class="separator2"><img src="images/separator2.svg" alt="" /></div>
+      <div class="basement">
+        <div class="names">
+          <div class="names1">
+            <p class="header1">АВТОР</p>
+            <p class="names1-1">
+              Арина Маринова <br />
+              Б24УвКИ05
+            </p>
+          </div>
+          <div class="names2">
+            <p class="header2">КУРАТОРЫ</p>
+            <p class="curators">
+              Камила Рихтер <br />
+              Анна Комкова
+            </p>
+          </div>
+        </div>
+        <div class="links">
+          <div class="about-museum">
+            <p class="header3">О МУЗЕЕ</p>
+            <a id="link1" href="pages/about.html">О НАС</a>
+            <a id="link1" href="pages/employees.html">СОТРУДНИКИ</a>
+            <a id="link1" href="pages/partner.html">ПАРТНЁР</a>
+          </div>
+          <div class="education">
+            <p class="header4">ОБРАЗОВАНИЕ</p>
+            <a id="link1" href="pages/adult.html">ДЛЯ ВЗРОСЛЫХ</a>
+            <a id="link1" href="pages/kids.html">ДЛЯ ДЕТЕЙ</a>
+          </div>
+          <div class="other">
+            <p class="header5">ПРОЧЕЕ</p>
+            <a id="link1" href="pages/merch.html">МЕРЧ</a>
+            <a id="link1" href="pages/tickets.html">БИЛЕТЫ</a>
+          </div>
+          <button class="refresh">
+            <img src="images/arrow-main.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
