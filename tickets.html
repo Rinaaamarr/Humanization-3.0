@@ -8,13 +8,16 @@
     <script src="/javascript/script.js"></script>
   </head>
   <body>
+    <!-- навигация -->
     <nav>
       <div class="nav-background"></div>
       <div class="pages">
         <a href="about.html">[ О НАС ]</a>
         <a href="merch.html">[ МЕРЧ ]</a>
         <a href="tickets.html">[ БИЛЕТЫ ]</a>
-        <a id="main-page" href="index.html"><img src="images/logo-main.svg" alt=""></a>
+        <a id="main-page" href="index.html"
+          ><img src="images/logo-others.svg" alt=""
+        /></a>
         <a href="adult.html">[ ОБРАЗОВАНИЕ ]</a>
         <div class="dropdown">
           <p class="dropbtn">[ МУЗЕЙ ▾ ]</p>
@@ -26,5 +29,118 @@
         <p class="english">[ EN ]</p>
       </div>
     </nav>
+    <!-- секция 1 -->
+    <section class="information">
+      <p class="header-buy">Купить билет</p>
+      <p class="text-buy">
+        Приглашаем вас стать частью уникального опыта — <br />путешествия
+        в мир толерантности и взаимопонимания. <br />Покупая билет, вы делаете
+        шаг навстречу будущему, <br />
+        в котором технологии и человечность идут рука об руку. <br />
+        Присоединяйтесь к нам и откройте для себя, как взаимное <br />
+        уважение может изменить мир. <br />
+        <br />
+        Мы ждём вас!
+      </p>
+      <img class="people-buy" src="images/chuvaki-tickets.svg" alt="" />
+      <div class="separator-big">
+        <img src="images/separator-big.svg" alt="" />
+      </div>
+    </section>
+    <!-- cекция 2 -->
+    <!-- формы -->
+    <section class="buying-process">
+      <p class="event-header-buy">Событие</p>
+      <select required name="events" id="events">
+        <option value="" disabled selected hidden>Название события</option>
+        <option value="1">Свобода: вирус или право?</option>
+        <option value="2">Эмоции ИИ: Введение</option>
+        <option value="3">Серия лекций «Откройся»</option>
+        <option value="4">Роботы и их права</option>
+        <option value="5">Эмоции это нормально</option>
+        <option value="6">Эмоции ИИ: страхи</option>
+        <option value="7">Очеловечь свой разум</option>
+        <option value="8">Будь человеком, а не машиной</option>
+        <option value="9">Механизм VS Душа: что важнее?</option>
+        <option value="10">Они тоже люди</option>
+      </select>
+      <p class="date-header-buy">Дата</p>
+      <input
+        placeholder="Выберите дату"
+        class="selectDate"
+        type="text"
+        onfocus="(this.type='date')"
+        onblur="(this.type='text')"
+        id="date"
+      />
+      <p class="pay-header-buy">Всего к оплате</p>
+      <p class="price-number">1000₽</p>
+      <p class="personal-info">Личные данные</p>
+      <form id="form" method="">
+        <input
+          type="text"
+          name="name"
+          value=""
+          placeholder="ФИО"
+          id="nameFill"
+        />
+        <input
+          type="email"
+          name="email"
+          value=""
+          placeholder="Электронная почта"
+          id="emailFill"
+        />
+        <input
+          type="tel"
+          name="phone-number"
+          value=""
+          placeholder="Телефон"
+          id="phoneFill"
+        />
+        <button type="submit" name="button" id="submit">Купить</button>
+      </form>
+    </section>
+    <section class="basement-tickets">
+      <div id="basement-tix" class="basement">
+        <div class="names">
+          <div class="names1">
+            <p class="header1">АВТОР</p>
+            <p class="names1-1">
+              Арина Маринова <br />
+              Б24УвКИ05
+            </p>
+          </div>
+          <div class="names2">
+            <p class="header2">КУРАТОРЫ</p>
+            <p class="curators">
+              Камила Рихтер <br />
+              Анна Комкова
+            </p>
+          </div>
+        </div>
+        <div class="links">
+          <div class="about-museum">
+            <p class="header3">О МУЗЕЕ</p>
+            <a id="link1" href="about.html">О НАС</a>
+            <a id="link1" href="employees.html">СОТРУДНИКИ</a>
+            <a id="link1" href="partner.html">ПАРТНЁР</a>
+          </div>
+          <div class="education">
+            <p class="header4">ОБРАЗОВАНИЕ</p>
+            <a id="link1" href="adult.html">ДЛЯ ВЗРОСЛЫХ</a>
+            <a id="link1" href="kids.html">ДЛЯ ДЕТЕЙ</a>
+          </div>
+          <div class="other">
+            <p class="header5">ПРОЧЕЕ</p>
+            <a id="link1" href="merch.html">МЕРЧ</a>
+            <a id="link1" href="tickets.html">БИЛЕТЫ</a>
+          </div>
+          <button class="refresh">
+            <img src="images/arrow-main.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
