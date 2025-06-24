@@ -12,7 +12,7 @@
   z-index: -500;
 } */
 
-/* Nav Bar */
+/* --------------------------------------NAV BAR */
 nav {
   display: flex;
 }
@@ -119,11 +119,12 @@ a:hover:not(#main-page, #link, .dropdown-content a, #link1) {
   color: black;
 }
 
-/* MAIN PAGE */
+/* --------------------------------------MAIN PAGE */
 /* SECTION 1 */
 .introduction {
-  width: 100%;
+  width: 100vw;
   height: 50vw;
+  overflow: hidden;
 }
 .mouse-parallax {
   height: 500px;
@@ -712,4 +713,211 @@ input {
   cursor: pointer;
 }
 
-/* ABOUT US */
+/* --------------------------------------ABOUT US */
+/* SECTION 1 */
+.animation-values {
+  width: 100vw;
+  height: 56.41vw;
+  display: flex;
+  overflow: hidden;
+}
+.anima-background {
+  width: 100vw;
+  height: 49.22vw;
+  margin-top: 4vw;
+}
+
+/* SECTION 2 */
+.description {
+  width: 100vw;
+  height: 57.22vw;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+.header-about {
+  font-family: 'Inter Semibold';
+  font-size: 50px;
+  color: black;
+  margin: 0 0 0 1.56vw;
+}
+.text-about {
+  font-family: 'Inter';
+  font-size: 20px;
+  color: black;
+  margin-top: 5.7vw;
+  margin-left: -27.15vw;
+}
+.text-about b {
+  font-family: 'Inter Bold';
+}
+.roof img {
+  width: 96.88vw;
+  height: 35.31vw;
+  position: absolute;
+  margin-left: -53.6vw;
+  margin-top: 16vw;
+}
+
+/* SECTION 3 */
+.content-about {
+  width: 100vw;
+  height: 90vw;
+  display: flex;
+  overflow: hidden;
+}
+.separator-1 {
+  margin: 0 0 0 1.56vw;
+}
+.separator-2 {
+  margin-top: 26.1vw;
+  margin-left: 48vw;
+  position: absolute;
+}
+.separator-3 {
+  margin: 58vw 0 0 1.56vw;
+}
+.separator-4 {
+  margin-top: 26vw;
+  margin-left: 48vw;
+  position: absolute;
+}
+/* ___________________ */
+.room-1 {
+  font-family: 'Inter';
+  color: black;
+  display: contents;
+  position: relative;
+}
+.room-name {
+  font-family: 'Inter Semibold';
+  font-size: 32px;
+  position: absolute;
+  margin-top: 6vw;
+  margin-left: 1.2vw;
+}
+.room-description {
+  font-size: 16px;
+  position: absolute;
+  margin-top: 6vw;
+  margin-left: 35vw;
+}
+.room-dialogue {
+  width: 31.87vw;
+  height: 16.64vw;
+  position: absolute;
+  margin-top: 6vw;
+  margin-left: 66.5vw;
+}
+/* ___________________ */
+.room-2 {
+  font-family: 'Inter';
+  color: black;
+  display: contents;
+  position: relative;
+}
+.room-name2,
+.room-description2,
+.room-mind {
+  margin-top: 34vw;
+}
+.room-name2 {
+  font-family: 'Inter Semibold';
+  font-size: 32px;
+  position: absolute;
+  margin-left: 1.2vw;
+}
+.room-description2 {
+  font-size: 16px;
+  position: absolute;
+  margin-left: 35vw;
+}
+.room-mind {
+  width: 21.56vw;
+  height: 21.56vw;
+  position: absolute;
+  margin-left: 66.55vw;
+}
+/* ___________________ */
+.room-3 {
+  font-family: 'Inter';
+  color: black;
+  display: contents;
+  position: relative;
+}
+.room-name3,
+.room-description3,
+.room-becoming {
+  margin-top: 65vw;
+}
+.room-name3 {
+  font-family: 'Inter Semibold';
+  font-size: 32px;
+  position: absolute;
+  margin-left: 1.2vw;
+}
+.room-description3 {
+  font-size: 16px;
+  position: absolute;
+  margin-left: 35vw;
+}
+.room-becoming {
+  width: 31.87vw;
+  height: 16.64vw;
+  position: absolute;
+  margin-left: 66.55vw;
+}
+
+/* SECTION 4 */
+.about-quote {
+  width: 100vw;
+  height: 59vw;
+  display: flex;
+  overflow: hidden;
+}
+.quote-2 {
+  font-family: 'Inter Medium';
+  font-size: 66px;
+  color: black;
+  align-items: center;
+  padding-left: 20vw;
+  margin-top: 5vw;
+  position: relative;
+  text-wrap: nowrap;
+}
+.quote-2 span {
+  color: #0026ff;
+}
+.line-1-about {
+  margin-top: 14vw;
+  margin-left: -56.8vw;
+  position: absolute;
+  display: flex;
+}
+.line-1-about path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 2.5s linear forwards;
+  display: flex;
+}
+.line-2-about {
+  margin-top: 8.5vw;
+  margin-left: -33.8vw;
+  position: absolute;
+  display: flex;
+}
+.line-2-about path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 2.5s linear forwards;
+  display: flex;
+  animation-delay: 0.5s;
+}
+#basement-about {
+  width: 100%;
+  height: 30.23vw;
+  margin-left: -76.45vw;
+  margin-top: 29vw;
+}
+
+/* --------------------------------------MERCH */
