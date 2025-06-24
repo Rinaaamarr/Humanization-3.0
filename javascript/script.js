@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
   shuffle()
   flipCard1()
   flipCard2()
+  windowOpen()
 //   refresh()
 })
 
@@ -47,6 +48,26 @@ function flipCard2() {
   card.addEventListener('click', function () {
     card.classList.toggle('is-flipped')
   })
+}
+
+function windowOpen() {
+const modal = document.querySelector('#modal')
+const btn = document.querySelector('#itemOne')
+const close = document.querySelector('.close')
+
+btn.onclick = function () {
+  modal.style.visibility = '1'
+}
+
+close.onclick = function () {
+  modal.style.display = 'none'
+}
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = 'none'
+  }
+}
 }
 
 // function refresh() {

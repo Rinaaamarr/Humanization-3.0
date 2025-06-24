@@ -255,6 +255,7 @@ a:hover:not(#main-page, #link, .dropdown-content a, #link1) {
   font-size: 53px;
   color: black;
   margin-left: 5.8vw;
+  margin-top: -57vw;
 }
 .frame-1,
 .frame-2 {
@@ -528,6 +529,7 @@ a:hover:not(#main-page, #link, .dropdown-content a, #link1) {
   align-items: center;
   padding-left: 20vw;
   position: relative;
+  margin-top: -7vw;
 }
 .line1 {
   margin-top: 4.3vw;
@@ -881,7 +883,7 @@ input {
   color: black;
   align-items: center;
   padding-left: 20vw;
-  margin-top: 5vw;
+  margin-top: -35vw;
   position: relative;
   text-wrap: nowrap;
 }
@@ -921,3 +923,242 @@ input {
 }
 
 /* --------------------------------------MERCH */
+/* SECTION 1 */
+.opening-page-merch {
+  width: 100vw;
+  height: 15.78vw;
+  display: flex;
+  overflow: hidden;
+}
+p {
+  align-content: center;
+}
+.header-merch {
+  font-family: 'Inter Semibold';
+  font-size: 60px;
+  color: black;
+  margin-left: 1.2vw;
+}
+.description-merch {
+  font-family: 'Inter';
+  font-size: 20px;
+  color: black;
+  margin-top: 0.3vw;
+  margin-left: 18.5vw;
+}
+
+/* SECTION 2 */
+.catalogue {
+  width: 100vw;
+  height: 92.72vw;
+  display: flex;
+  overflow: hidden;
+}
+
+/* Items */
+.card1 {
+  margin-left: 1.2vw;
+}
+.item1 {
+  width: 24.77vw;
+  height: 24.77vw;
+  position: relative;
+}
+.add {
+  width: 2.34vw;
+  height: 2.34vw;
+  background-color: #0026ff;
+  border: none;
+  position: absolute;
+  cursor: pointer;
+  margin-left: -3.1vw;
+  margin-top: 1vw;
+  transition: all 0.3s ease-in-out;
+}
+.add:hover {
+  transform: scale(1.1);
+}
+.add img {
+  margin-top: 0.2vw;
+}
+.item-1-name,
+.item-2-name,
+.item-3-name,
+.item-4-name,
+.item-5-name,
+.item-6-name {
+  font-family: 'Inter';
+  font-size: 20px;
+  color: black;
+  margin-top: 0.5vw;
+}
+.item-1-price,
+.item-2-price,
+.item-3-price,
+.item-4-price,
+.item-5-price,
+.item-6-price {
+  font-family: 'Inter Semibold';
+  font-size: 23px;
+  color: black;
+  margin-top: 0.6vw;
+}
+.card2 {
+  margin-left: 29.3vw;
+  margin-top: -25.85vw;
+}
+.item2 {
+  width: 24.77vw;
+  height: 24.77vw;
+  position: relative;
+}
+.card3 {
+  margin-left: 49.3vw;
+  margin-top: 5.85vw;
+}
+.item3 {
+  width: 24.77vw;
+  height: 24.77vw;
+  position: relative;
+}
+.card4 {
+  margin-left: 77.3vw;
+  margin-top: -25.75vw;
+}
+.item4 {
+  width: 21.48vw;
+  height: 21.48vw;
+  position: relative;
+}
+.card5 {
+  margin-left: 1.2vw;
+  margin-top: 5.95vw;
+}
+.item5 {
+  width: 21.48vw;
+  height: 21.48vw;
+  position: relative;
+}
+.card6 {
+  margin-left: 29.3vw;
+  margin-top: -25.75vw;
+}
+.item6 {
+  width: 21.48vw;
+  height: 21.48vw;
+  position: relative;
+}
+/* Cards */
+.background-card {
+  width: 74vw;
+  height: 33.28vw;
+  background-color: white;
+  box-shadow: 0px 4px 20px #d4d4d4;
+  align-self: center;
+  position: relative;
+  margin-left: -11vw;
+  margin-top: 3vw;
+}
+.item1-view img {
+  width: 26.8vw;
+  height: 27.34vw;
+  position: absolute;
+  margin-top: -29.5vw;
+  margin-left: -5.5vw;
+}
+.object-1 {
+  margin-top: -29.5vw;
+}
+.item-1-priceview {
+  margin-top: -19vw;
+}
+.object-1,
+.item-1-priceview {
+  font-family: 'Inter Semibold';
+  font-size: 34px;
+  color: black;
+  margin-left: 26vw;
+  position: absolute;
+}
+.item-1-description {
+  font-family: 'Inter';
+  font-size: 17px;
+  color: black;
+  position: absolute;
+  margin-left: 26vw;
+  margin-top: -25vw;
+}
+.close {
+  background-color: transparent;
+  border: none;
+  font-family: 'Inter Medium';
+  font-size: 50px;
+  color: black;
+  cursor: pointer;
+  position: absolute;
+  margin-top: -33.5vw;
+  margin-left: -9.5vw;
+  transition: all 0.3s ease-in-out;
+}
+.close:hover {
+  transform: scale(1.1);
+}
+.add-to-cart {
+  width: 22.58vw;
+  height: 4.06vw;
+  background-color: #0026ff;
+  border: none;
+  font-family: 'Inter Semibold';
+  -webkit-text-fill-color: white;
+  font-size: 23px;
+  cursor: pointer;
+  position: absolute;
+  margin-left: 24vw;
+  margin-top: -6.25vw;
+  transition: all 0.3s ease-in-out;
+}
+.add-to-cart:hover {
+  background-color: #0021da;
+  -webkit-text-fill-color: #dfdfdf;
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  overflow: auto;
+}
+.cart {
+ width: 6.25vw;
+ height: 6.25vw;
+ background-color: #0026FF; 
+ border-radius: 100%;
+ border: white solid 0.89px;
+ margin-left: -7vw;
+ margin-top: 24vw;
+ position: fixed;
+ transition: all 0.3s ease-in-out;
+ cursor: pointer;
+}
+.cart:hover {
+transform: scale(1.1);
+background-color: #0021da;
+}
+.count {
+      position: absolute;
+    font-family: 'Inter Semibold';
+    font-size: 18px;
+    color: white;
+    margin-left: 2.3vw;
+    margin-top: -2.1vw;
+}
+/* SECTION 3 */
+.basement-refresh {
+  width: 100vw;
+  height: 30.3vw;
+  overflow: hidden;
+  display: flex;
+}
+#basement-refresh {
+  margin-top: 2vw;
+  margin-left: 0vw;
+}
