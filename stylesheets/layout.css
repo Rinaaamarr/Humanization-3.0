@@ -13,6 +13,9 @@
 } */
 
 /* Nav Bar */
+nav {
+  display: flex;
+}
 .nav-background {
   width: 100vw;
   height: 6.1719vw;
@@ -22,7 +25,6 @@
   margin-left: 0;
   position: relative;
   overflow: hidden;
-  display: flex;
 }
 .pages {
   font-family: 'Inter Semibold';
@@ -36,7 +38,7 @@
   margin-top: -6.3vw;
   align-items: center;
 }
-a:not(#link, .dropdown-content a, #link1) {
+a:not(#main-page, #link, .dropdown-content a, #link1) {
   text-decoration: none;
   color: black;
   box-shadow: inset 0 0 0 0 black;
@@ -44,12 +46,18 @@ a:not(#link, .dropdown-content a, #link1) {
   transition: black 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-a:hover:not(#link, .dropdown-content a, #link1) {
+a:hover:not(#main-page, #link, .dropdown-content a, #link1) {
   box-shadow: inset 163px 0 0 0 black;
   color: white;
   transform: scale(1.1);
   margin: 0 -0.25rem;
   padding: 0.219rem 0.25rem;
+}
+#main-page {
+  transition: all 0.3s ease-in-out;
+}
+#main-page:hover {
+  transform: scale(1.1);
 }
 .english {
   font-family: 'Inter';
@@ -111,6 +119,7 @@ a:hover:not(#link, .dropdown-content a, #link1) {
   color: black;
 }
 
+/* MAIN PAGE */
 /* SECTION 1 */
 .introduction {
   width: 100%;
@@ -130,12 +139,12 @@ a:hover:not(#link, .dropdown-content a, #link1) {
   width: 100vw;
   height: 30vw;
   transition: all 0.1s ease;
-  background-image: url(../images/cross-background.svg);
+  background-image: url('../images/cross-background.svg');
   margin-top: 6vw;
   margin-left: 5.2vw;
 }
 .mouse-parallax-image-1 {
-  background-image: url(../images/image1-1.svg);
+  background-image: url('../images/image1-1.svg');
   width: 18.13vw;
   height: 11.25vw;
   left: -10%;
@@ -144,9 +153,11 @@ a:hover:not(#link, .dropdown-content a, #link1) {
   position: absolute;
   margin-left: 15vw;
   margin-top: 24vw;
+  animation: change1 10s linear infinite;
+  transition: all 0.5s ease-in-out;
 }
 .mouse-parallax-image-2 {
-  background-image: url(../images/image2-1.svg);
+  background-image: url('../images/image2-1.svg');
   width: 14.3vw;
   height: 21.48vw;
   background-repeat: no-repeat;
@@ -155,9 +166,11 @@ a:hover:not(#link, .dropdown-content a, #link1) {
   position: absolute;
   margin-top: 6vw;
   margin-left: 35.5vw;
+  animation: change2 10s linear infinite;
+  animation-delay: 0.5s;
 }
 .mouse-parallax-image-3 {
-  background-image: url(../images/image3-1.svg);
+  background-image: url('../images/image3-1.svg');
   width: 14.3vw;
   height: 21.48vw;
   background-repeat: no-repeat;
@@ -166,9 +179,11 @@ a:hover:not(#link, .dropdown-content a, #link1) {
   position: absolute;
   margin-top: 12.7vw;
   margin-left: 69vw;
+  animation: change3 10s linear infinite;
+  animation-delay: 0.8s;
 }
 .mouse-parallax-image-4 {
-  background-image: url(../images/image4-1.svg);
+  background-image: url('../images/image4-1.svg');
   width: 18.13vw;
   height: 11.25vw;
   background-repeat: no-repeat;
@@ -177,6 +192,7 @@ a:hover:not(#link, .dropdown-content a, #link1) {
   position: absolute;
   margin-top: 6vw;
   margin-left: 87vw;
+  animation: change4 10s linear infinite;
 }
 .heading1 {
   font-family: 'Inter Semibold';
@@ -568,8 +584,9 @@ a:hover:not(#link, .dropdown-content a, #link1) {
   font-family: 'Inter Medium';
   font-size: 35px;
   color: black;
-  margin-top: 5vw;
+  margin-top: 5.5vw;
   margin-left: -50.9vw;
+  text-wrap: nowrap;
 }
 input {
   width: 37.81vw;
@@ -694,3 +711,5 @@ input {
   margin: 20vw 88.44vw;
   cursor: pointer;
 }
+
+/* ABOUT US */

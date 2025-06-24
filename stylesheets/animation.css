@@ -1,3 +1,85 @@
+@keyframes change1 {
+  0% {
+    background-image: url('../images/image1-1.svg');
+  }
+  20% {
+    background-image: url('../images/dialogue1.svg');
+  }
+  40% {
+    background-image: url('../images/mechanism1.svg');
+  }
+  60% {
+    background-image: url('../images/connection1.svg');
+  }
+  80% {
+    background-image: url('../images/us1.svg');
+  }
+  100% {
+    background-image: url('../images/image1-1.svg');
+  }
+}
+
+@keyframes change2 {
+  0% {
+    background-image: url('../images/image2-1.svg');
+  }
+  20% {
+    background-image: url('../images/dialogue2.svg');
+  }
+  40% {
+    background-image: url('../images/mechanism2.svg');
+  }
+  60% {
+    background-image: url('../images/connection2.svg');
+  }
+  80% {
+    background-image: url('../images/us2.svg');
+  }
+  100% {
+    background-image: url('../images/image2-1.svg');
+  }
+}
+@keyframes change3 {
+  0% {
+    background-image: url('../images/image3-1.svg');
+  }
+  20% {
+    background-image: url('../images/dialogue3.svg');
+  }
+  40% {
+    background-image: url('../images/mechanism3.svg');
+  }
+  60% {
+    background-image: url('../images/connection3.svg');
+  }
+  80% {
+    background-image: url('../images/us3.svg');
+  }
+  100% {
+    background-image: url('../images/image3-1.svg');
+  }
+}
+@keyframes change4 {
+  0% {
+    background-image: url('../images/image4-1.svg');
+  }
+  20% {
+    background-image: url('../images/dialogue4.svg');
+  }
+  40% {
+    background-image: url('../images/mechanism4.svg');
+  }
+  60% {
+    background-image: url('../images/connection4.svg');
+  }
+  80% {
+    background-image: url('../images/us4.svg');
+  }
+  100% {
+    background-image: url('../images/image4-1.svg');
+  }
+}
+
 /* Рисование векторов - мейн */
 @keyframes dash {
   to {

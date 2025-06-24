@@ -17,8 +17,8 @@ function parallax() {
     let x = e.clientX / window.innerWidth
     let y = e.clientY / window.innerHeight
     bg.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)'
-    image1.style.transform = 'translate(+' + x * 50 + 'px, -' + y * 50 + 'px)'
-    image2.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)'
+    image1.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)'
+    image2.style.transform = 'translate(+' + x * 50 + 'px, -' + y * 50 + 'px)'
     image3.style.transform = 'translate(+' + x * 50 + 'px, -' + y * 50 + 'px)'
     image4.style.transform = 'translate(-' + x * 50 + 'px, -' + y * 50 + 'px)'
   })
