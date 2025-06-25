@@ -38,7 +38,7 @@ nav {
   margin-top: -6.3vw;
   align-items: center;
 }
-a:not(#main-page, #link, .dropdown-content a, #link1) {
+a:not(#main-page, #link, .dropdown-content a, #link1, #visit) {
   text-decoration: none;
   color: black;
   box-shadow: inset 0 0 0 0 black;
@@ -46,7 +46,7 @@ a:not(#main-page, #link, .dropdown-content a, #link1) {
   transition: black 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-a:hover:not(#main-page, #link, .dropdown-content a, #link1) {
+a:hover:not(#main-page, #link, .dropdown-content a, #link1, #visit) {
   box-shadow: inset 163px 0 0 0 black;
   color: white;
   transform: scale(1.1);
@@ -1333,7 +1333,6 @@ select:invalid {
 }
 #submit:hover {
   background-color: #0026ff;
-
 }
 /* SECTION 3 */
 .basement-tickets {
@@ -1345,4 +1344,228 @@ select:invalid {
 #basement-tix {
   margin-top: 0;
   margin-left: 0vw;
+}
+
+/* --------------------------------------PARTNER */
+/* SECTION 1 */
+.factory {
+  width: 100vw;
+  height: 28.91vw;
+  display: flex;
+  overflow: hidden;
+}
+.header-factory {
+  font-family: 'Inter Semibold';
+  font-size: 60px;
+  color: black;
+  margin-top: -13vw;
+  margin-left: 1.2vw;
+}
+.header-factory span {
+  color: #0026ff;
+}
+.factory-description {
+  font-family: 'Inter';
+  font-size: 20px;
+  color: black;
+  margin-top: 4.5vw;
+  margin-left: -56.6vw;
+}
+
+/* SECTION 2 */
+#steps {
+  width: 100vw;
+  height: 70vw;
+  display: flex;
+  overflow: hidden;
+}
+.steps p:not(.step-1) {
+  font-family: 'Inter Semibold';
+  font-size: 30px;
+  color: black;
+}
+.steps span {
+  color: #0026ff;
+}
+.step1-img {
+  background-image: url('../images/step1.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 31.41vw;
+  height: 18.98vw;
+  margin-left: 1.2vw;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+.step1 p {
+  position: absolute;
+  margin-left: 33vw;
+  margin-top: -2.08vw;
+}
+.step1-img:hover {
+  background: #3e3e6b;
+  border: black solid 1px;
+}
+.step2-img {
+  background-image: url('../images/step2.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 31.56vw;
+  height: 20.7vw;
+  margin-left: 67.5vw;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+.step2-img:hover {
+  background: #3e3e6b;
+  border: black solid 1px;
+}
+.step2 p {
+  position: absolute;
+  margin-left: 57.5vw;
+  margin-top: -2.08vw;
+}
+.step3 {
+  margin-top: -35vw;
+}
+.step3-img {
+  background-image: url('../images/step3.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 31.41vw;
+  height: 18.05vw;
+  margin-left: 1.2vw;
+  margin-top: 25vw;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+.step3 p {
+  position: absolute;
+  margin-left: 33vw;
+  margin-top: -2.17vw;
+}
+.step3-img:hover {
+  background: #3e3e6b;
+  border: black solid 1px;
+}
+.step4-img {
+  background-image: url('../images/step4.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 31.41vw;
+  height: 20.39vw;
+  margin-left: 67.5vw;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+.step4 p {
+  position: absolute;
+  margin-left: 57.5vw;
+  margin-top: -2.08vw;
+}
+.step4-img:hover {
+  background: #3e3e6b;
+  border: black solid 1px;
+}
+.step-1 {
+  text-align: center;
+  font-family: 'Inter';
+  font-size: 14px;
+  color: white;
+  margin-left: 6vw;
+  margin-top: -10vw;
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+}
+.step-1:hover {
+  opacity: 1;
+}
+
+/* SECTION 3  */
+.quote-factory {
+  width: 100vw;
+  height: 37.5vw;
+  overflow: hidden;
+  display: flex;
+}
+.block {
+  width: 96.88vw;
+  height: 35.16vw;
+  margin-left: 8vw;
+  position: relative;
+  margin-top: 2vw;
+}
+.quotation {
+  position: absolute;
+  margin-left: 32vw;
+  margin-top: 4vw;
+}
+.cite {
+  font-family: 'Inter';
+  font-size: 25px;
+  color: black;
+  position: absolute;
+  margin-left: 35vw;
+  margin-top: 9vw;
+}
+
+/* SECTION 4 */
+.finish-partner {
+  width: 100vw;
+  height: 46.88vw;
+  display: flex;
+  overflow: hidden;
+}
+.cta {
+  font-family: 'Inter Semibold';
+  font-size: 20px;
+  color: black;
+  margin-left: 40vw;
+  margin-top: -44vw;
+  text-wrap: nowrap;
+}
+.block-short {
+  width: 25.38vw;
+  height: 6.02vw;
+  background-color: #1a1a1a;
+  margin-top: 8vw;
+  margin-left: 0vw;
+  position: absolute;
+}
+.visit {
+  width: 35.81vw;
+  height: 6.02vw;
+  background-color: #0026ff;
+  border: none;
+  font-family: 'Inter Semibold';
+  color: white;
+  font-size: 40px;
+  padding: 2px;
+  position: absolute;
+  margin-left: 26.35vw;
+  margin-top: 8vw;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.visit:hover {
+  background-color: #0021da;
+  color: #dfdfdf;
+  transform: scale(0.89);
+}
+.block-long {
+  width: 37.9vw;
+  height: 6.02vw;
+  background-color: #1a1a1a;
+  margin-top: 8vw;
+  margin-left: 63vw;
+  position: absolute;
+}
+#visit {
+  text-decoration: none;
+  color: white;
+}
+#basement-factory {
+  margin-left: -78.05vw;
+  margin-top: 18.5vw;
 }
