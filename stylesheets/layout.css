@@ -1,16 +1,9 @@
 * {
   box-sizing: border-box;
 }
-/* body {
-  background-image: url('../images/макет-1280.svg');
-  width: 100%;
-  height: 3400px;
-  background-repeat: no-repeat;
-  opacity: 0.5;
-  display: flex;
-  background-size: cover;
-  z-index: -500;
-} */
+body .visible {
+  display: block;
+}
 
 /* --------------------------------------NAV BAR */
 nav {
@@ -1088,6 +1081,7 @@ p {
   color: black;
   margin-top: 0.3vw;
   margin-left: 18.5vw;
+  line-height: 1.5vw;
 }
 
 /* SECTION 2 */
@@ -1108,7 +1102,12 @@ p {
   height: 24.77vw;
   position: relative;
 }
-.add {
+.add,
+.add-2,
+.add-3,
+.add-4,
+.add-5,
+.add-6 {
   width: 2.34vw;
   height: 2.34vw;
   background-color: #0026ff;
@@ -1135,6 +1134,8 @@ p {
   font-size: 20px;
   color: black;
   margin-top: 0.5vw;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 .item-1-price,
 .item-2-price,
@@ -1146,6 +1147,14 @@ p {
   font-size: 23px;
   color: black;
   margin-top: 0.6vw;
+}
+.item-1-name:hover,
+.item-2-name:hover,
+.item-3-name:hover,
+.item-4-name:hover,
+.item-5-name:hover,
+.item-6-name:hover {
+  color: #0026ff;
 }
 .card2 {
   margin-left: 29.3vw;
@@ -1203,7 +1212,92 @@ p {
   margin-left: -11vw;
   margin-top: 3vw;
 }
+.background-card2 {
+  width: 74vw;
+  height: 33.28vw;
+  background-color: white;
+  box-shadow: 0px 4px 20px #d4d4d4;
+  align-self: center;
+  position: relative;
+  margin-left: -11vw;
+  margin-top: 3vw;
+}
+.background-card3 {
+  width: 74vw;
+  height: 33.28vw;
+  background-color: white;
+  box-shadow: 0px 4px 20px #d4d4d4;
+  align-self: center;
+  position: relative;
+  margin-left: -11vw;
+  margin-top: 3vw;
+}
+.background-card4 {
+  width: 74vw;
+  height: 33.28vw;
+  background-color: white;
+  box-shadow: 0px 4px 20px #d4d4d4;
+  align-self: center;
+  position: relative;
+  margin-left: -11vw;
+  margin-top: 3vw;
+}
+.background-card5 {
+  width: 74vw;
+  height: 33.28vw;
+  background-color: white;
+  box-shadow: 0px 4px 20px #d4d4d4;
+  align-self: center;
+  position: relative;
+  margin-left: -11vw;
+  margin-top: 3vw;
+}
+.background-card6 {
+  width: 74vw;
+  height: 33.28vw;
+  background-color: white;
+  box-shadow: 0px 4px 20px #d4d4d4;
+  align-self: center;
+  position: relative;
+  margin-left: -11vw;
+  margin-top: 3vw;
+}
 .item1-view img {
+  width: 26.8vw;
+  height: 27.34vw;
+  position: absolute;
+  margin-top: -29.5vw;
+  margin-left: -5.5vw;
+}
+.item2-view img {
+  width: 26.8vw;
+  height: 27.34vw;
+  position: absolute;
+  margin-top: -29.5vw;
+  margin-left: -5.5vw;
+}
+.item3-view img {
+  width: 26.8vw;
+  height: 27.34vw;
+  position: absolute;
+  margin-top: -29.5vw;
+  margin-left: -5.5vw;
+}
+.item4-view img {
+  width: 26.8vw;
+  height: 27.34vw;
+  position: absolute;
+  margin-top: -29.5vw;
+  margin-left: -5.5vw;
+}
+.item5-view img {
+  width: 26.8vw;
+  height: 27.34vw;
+  position: absolute;
+  margin-top: -29.5vw;
+  margin-left: -5.5vw;
+}
+.item6-view img {
   width: 26.8vw;
   height: 27.34vw;
   position: absolute;
@@ -1224,6 +1318,76 @@ p {
   margin-left: 26vw;
   position: absolute;
 }
+.object-2 {
+  margin-top: -29.5vw;
+}
+.item-2-priceview {
+  margin-top: -19vw;
+}
+.object-2,
+.item-2-priceview {
+  font-family: 'Inter Semibold';
+  font-size: 34px;
+  color: black;
+  margin-left: 26vw;
+  position: absolute;
+}
+.object-3 {
+  margin-top: -29.5vw;
+}
+.item-3-priceview {
+  margin-top: -19vw;
+}
+.object-3,
+.item-3-priceview {
+  font-family: 'Inter Semibold';
+  font-size: 34px;
+  color: black;
+  margin-left: 26vw;
+  position: absolute;
+}
+.object-4 {
+  margin-top: -29.5vw;
+}
+.item-4-priceview {
+  margin-top: -19vw;
+}
+.object-4,
+.item-4-priceview {
+  font-family: 'Inter Semibold';
+  font-size: 34px;
+  color: black;
+  margin-left: 26vw;
+  position: absolute;
+}
+.object-5 {
+  margin-top: -29.5vw;
+}
+.item-5-priceview {
+  margin-top: -19vw;
+}
+.object-5,
+.item-5-priceview {
+  font-family: 'Inter Semibold';
+  font-size: 34px;
+  color: black;
+  margin-left: 26vw;
+  position: absolute;
+}
+.object-6 {
+  margin-top: -29.5vw;
+}
+.item-6-priceview {
+  margin-top: -19vw;
+}
+.object-6,
+.item-6-priceview {
+  font-family: 'Inter Semibold';
+  font-size: 34px;
+  color: black;
+  margin-left: 26vw;
+  position: absolute;
+}
 .item-1-description {
   font-family: 'Inter';
   font-size: 17px;
@@ -1231,6 +1395,52 @@ p {
   position: absolute;
   margin-left: 26vw;
   margin-top: -25vw;
+  line-height: 1.5vw;
+}
+.item-2-description {
+  font-family: 'Inter';
+  font-size: 17px;
+  color: black;
+  position: absolute;
+  margin-left: 26vw;
+  margin-top: -25vw;
+  line-height: 1.5vw;
+}
+.item-3-description {
+  font-family: 'Inter';
+  font-size: 17px;
+  color: black;
+  position: absolute;
+  margin-left: 26vw;
+  margin-top: -25vw;
+  line-height: 1.5vw;
+}
+.item-4-description {
+  font-family: 'Inter';
+  font-size: 17px;
+  color: black;
+  position: absolute;
+  margin-left: 26vw;
+  margin-top: -25vw;
+  line-height: 1.5vw;
+}
+.item-5-description {
+  font-family: 'Inter';
+  font-size: 17px;
+  color: black;
+  position: absolute;
+  margin-left: 26vw;
+  margin-top: -25vw;
+  line-height: 1.5vw;
+}
+.item-6-description {
+  font-family: 'Inter';
+  font-size: 17px;
+  color: black;
+  position: absolute;
+  margin-left: 26vw;
+  margin-top: -25vw;
+  line-height: 1.5vw;
 }
 .close {
   background-color: transparent;
@@ -1244,7 +1454,72 @@ p {
   margin-left: -9.5vw;
   transition: all 0.3s ease-in-out;
 }
-.close:hover {
+.close-2 {
+  background-color: transparent;
+  border: none;
+  font-family: 'Inter Medium';
+  font-size: 50px;
+  color: black;
+  cursor: pointer;
+  position: absolute;
+  margin-top: -33.5vw;
+  margin-left: -9.5vw;
+  transition: all 0.3s ease-in-out;
+}
+.close-3 {
+  background-color: transparent;
+  border: none;
+  font-family: 'Inter Medium';
+  font-size: 50px;
+  color: black;
+  cursor: pointer;
+  position: absolute;
+  margin-top: -33.5vw;
+  margin-left: -9.5vw;
+  transition: all 0.3s ease-in-out;
+}
+.close-4 {
+  background-color: transparent;
+  border: none;
+  font-family: 'Inter Medium';
+  font-size: 50px;
+  color: black;
+  cursor: pointer;
+  position: absolute;
+  margin-top: -33.5vw;
+  margin-left: -9.5vw;
+  transition: all 0.3s ease-in-out;
+}
+.close-5 {
+  background-color: transparent;
+  border: none;
+  font-family: 'Inter Medium';
+  font-size: 50px;
+  color: black;
+  cursor: pointer;
+  position: absolute;
+  margin-top: -33.5vw;
+  margin-left: -9.5vw;
+  transition: all 0.3s ease-in-out;
+}
+.close-6 {
+  background-color: transparent;
+  border: none;
+  font-family: 'Inter Medium';
+  font-size: 50px;
+  color: black;
+  cursor: pointer;
+  position: absolute;
+  margin-top: -33.5vw;
+  margin-left: -9.5vw;
+  transition: all 0.3s ease-in-out;
+}
+.close:hover,
+.close-2:hover,
+.close-3:hover,
+.close-4:hover,
+.close-5:hover,
+.close-6:hover {
   transform: scale(1.1);
 }
 .add-to-cart {
@@ -1268,6 +1543,41 @@ p {
 .modal {
   display: none;
   width: 100%;
+  margin-top: -15vw;
+  margin-left: -77vw;
+  position: fixed;
+}
+.modal2 {
+  display: none;
+  width: 100%;
+  margin-top: -12vw;
+  margin-left: -77vw;
+  position: fixed;
+}
+.modal3 {
+  display: none;
+  width: 100%;
+  margin-top: -12vw;
+  margin-left: -77vw;
+  position: fixed;
+}
+.modal4 {
+  display: none;
+  width: 100%;
+  margin-top: -12vw;
+  margin-left: -77vw;
+  position: fixed;
+}
+.modal5 {
+  display: none;
+  width: 100%;
+  margin-top: -12vw;
+  margin-left: -77vw;
+  position: fixed;
+}
+.modal6 {
+  display: none;
+  width: 100%;
   margin-top: -12vw;
   margin-left: -77vw;
   position: fixed;
@@ -1279,7 +1589,7 @@ p {
   border-radius: 100%;
   border: white solid 0.89px;
   margin-left: -7vw;
-  margin-top: 24vw;
+  margin-top: 20vw;
   position: fixed;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
