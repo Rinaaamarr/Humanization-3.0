@@ -1,12 +1,12 @@
 console.log('check')
 document.addEventListener('DOMContentLoaded', () => {
   parallax()
-  shuffle()
+  glitch()
   flipCard1()
   flipCard2()
-  windowOpen()
-  slider()
-//   refresh()
+  myFunction()
+  //   windowOpen()
+  //   refresh()
 })
 
 function parallax() {
@@ -26,15 +26,70 @@ function parallax() {
   })
 }
 
-function shuffle() {
-  const text = baffle('.word1')
-  text.set({
-    character: '',
-    speed: 120
+function glitch() {
+  const chars = ' @#%!^ @%#^&! *&^% '
+  const glitchDuration = 1000
+  const interval = 30
+
+  const glitchElements = document.querySelectorAll(
+    '.word1, .word2, .word3, .word4, .word5 '
+  )
+
+  glitchElements.forEach((el) => {
+    const originalText = el.dataset.text || el.textContent
+
+    el.addEventListener('mouseenter', () => {
+      let frame = 0
+      const length = originalText.length
+
+      const randomChar = () => chars[Math.floor(Math.random() * chars.length)]
+
+      const glitchInterval = setInterval(() => {
+        let output = ''
+
+        for (let i = 0; i < length; i++) {
+          if (i < frame) {
+            output += originalText[i]
+          } else {
+            output += randomChar()
+          }
+        }
+        el.textContent = output
+
+        frame++
+
+        if (frame > length) {
+          clearInterval(glitchInterval)
+          el.textContent = originalText
+        }
+      }, interval)
+    })
   })
-  text.start()
-  text.reveal(4000)
 }
+
+  var line1 = document.getElementById('line1')
+  var length = line1.getTotalLength()
+
+  // The start position of the drawing
+  line1.style.strokeDasharray = length
+
+  // Hide the triangle by offsetting dash. Remove this line to show the triangle before scroll draw
+  line1.style.strokeDashoffset = length
+
+  // Find scroll percentage on scroll (using cross-browser properties), and offset dash same amount as percentage scrolled
+  window.addEventListener('scroll', myFunction)
+
+  function myFunction() {
+    var scrollpercent =
+      (document.body.scrollTop + document.documentElement.scrollTop) /
+      (document.documentElement.scrollHeight -
+        document.documentElement.clientHeight)
+
+    var draw = length * scrollpercent
+
+    // Reverse the drawing (when scrolling upwards)
+    line1.style.strokeDashoffset = length - draw
+  }
 
 function flipCard1() {
   const card = document.querySelector('.card__inner')
@@ -51,28 +106,25 @@ function flipCard2() {
   })
 }
 
-function windowOpen() {
-const modal = document.querySelector('#modal')
-const btn = document.querySelector('#itemOne')
-const close = document.querySelector('.close')
+// function windowOpen() {
+//   const modal = document.querySelector('#modal')
+//   const btn = document.querySelector('#itemOne')
+//   const close = document.querySelector('.close')
 
-btn.onclick = function () {
-  modal.style.visibility = '1'
-}
+//   btn.onclick = function () {
+//     modal.style.visibility = '1'
+//   }
 
-close.onclick = function () {
-  modal.style.display = 'none'
-}
+//   close.onclick = function () {
+//     modal.style.display = 'none'
+//   }
 
-window.onclick = function (event) {
-  if (event.target == modal) {
-    modal.style.display = 'none'
-  }
-}
-}
-
-
-
+//   window.onclick = function (event) {
+//     if (event.target == modal) {
+//       modal.style.display = 'none'
+//     }
+//   }
+// }
 
 // function refresh() {
 //   const button = document.querySelector('.refresh')
@@ -81,27 +133,3 @@ window.onclick = function (event) {
 //     window.location.reload()
 //   })
 // }
-
-function slider() {
-var slideIndex = 1
-showDivs(slideIndex)
-
-function plusDivs(n) {
-  showDivs((slideIndex += n))
-}
-
-function showDivs(n) {
-  var i
-  var x = document.getElementsByClassName('mySlides')
-  if (n > x.length) {
-    slideIndex = 1
-  }
-  if (n < 1) {
-    slideIndex = x.length
-  }
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = 'none'
-  }
-  x[slideIndex - 1].style.display = 'block'
-}
-}

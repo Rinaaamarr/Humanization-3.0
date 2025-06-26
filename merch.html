@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Мерч</title>
     <link rel="stylesheet" href="stylesheets/style.css" />
-    <script src="javascript/script.js"></script>
+    <script src="javascript/merch.js"></script>
   </head>
   <body>
     <!-- навигация -->
@@ -46,7 +46,7 @@
       <div class="cards">
         <div class="card1">
           <img class="item-1" src="images/tshirt-1.svg" alt="" />
-          <button class="add">
+          <button id="add" class="add">
             <img src="images/add.svg" alt="" />
           </button>
           <p class="item-1-name">Футболка «Я ≠ Алгоритм»</p>
@@ -54,7 +54,7 @@
         </div>
         <div class="card2">
           <img class="item-2" src="images/tote-bag.svg" alt="" />
-          <button class="add">
+          <button id="add" class="add">
             <img src="images/add.svg" alt="" />
           </button>
           <p class="item-2-name">Сумка-шоппер “Human Inside”</p>
@@ -62,7 +62,7 @@
         </div>
         <div class="card3">
           <img class="item-3" src="images/cap-item.svg" alt="" />
-          <button class="add">
+          <button id="add" class="add">
             <img src="images/add.svg" alt="" />
           </button>
           <p class="item-3-name">Кепка «Ошибка 401»</p>
@@ -70,7 +70,7 @@
         </div>
         <div class="card4">
           <img class="item4" src="images/luggage-item.svg" alt="" />
-          <button class="add">
+          <button id="add" class="add">
             <img src="images/add.svg" alt="" />
           </button>
           <p class="item-4-name">Бирка «Не потеряй себя»</p>
@@ -78,7 +78,7 @@
         </div>
         <div class="card5">
           <img class="item5" src="images/book-item.svg" alt="" />
-          <button class="add">
+          <button id="add" class="add">
             <img src="images/add.svg" alt="" />
           </button>
           <p class="item-4-name">Книга «Диалог с машиной»</p>
@@ -86,7 +86,7 @@
         </div>
         <div class="card6">
           <img class="item6" src="images/sticker-item.svg" alt="" />
-          <button class="add">
+          <button id="add" class="add">
             <img src="images/add.svg" alt="" />
           </button>
           <p class="item-6-name">Стикер “Humanization"</p>
@@ -113,11 +113,14 @@
         </div>
       </div>
       <div class="cart-button">
-        <button class="cart"><img src="images/cart.svg" alt="" /><p class="count">0</p></button>
+        <button id="cart" class="cart">
+          <img src="images/cart.svg" alt="" />
+          <p id="count" class="count">0</p>
+        </button>
       </div>
     </section>
     <!-- подвал -->
-     <section class="basement-refresh">
+    <section class="basement-refresh">
       <div id="basement-refresh" class="basement">
         <div class="names">
           <div class="names1">
@@ -157,6 +160,6 @@
           </button>
         </div>
       </div>
-     </section>
+    </section>
   </body>
 </html>

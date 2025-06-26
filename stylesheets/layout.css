@@ -216,11 +216,29 @@ a:hover:not(#main-page, #link, .dropdown-content a, #link1, #visit) {
   font-family: 'Inter Medium';
   font-size: 65px;
   color: #0026ff;
-  margin-top: -13vw;
-  margin-left: 38vw;
   transition: all 0.3s ease-in-out;
   position: absolute;
   z-index: 2;
+}
+.word1 {
+  margin-top: -13vw;
+  margin-left: 38vw;
+}
+.word2 {
+  margin-top: -4.4vw;
+  margin-left: 42vw;
+}
+.word3 {
+  margin-top: -4.4vw;
+  margin-left: 38.3vw;
+}
+.word4 {
+  margin-top: -4.4vw;
+  margin-left: 43vw;
+}
+.word5 {
+  margin-top: -4.4vw;
+  margin-left: 45.3vw;
 }
 .text-1 {
   font-family: 'Inter';
@@ -366,12 +384,16 @@ a:hover:not(#main-page, #link, .dropdown-content a, #link1, #visit) {
   margin-left: 3.3vw;
   margin-top: 16vw;
 }
-.logo-adult {
+.logo-adult img {
   width: 8.13vw;
   height: 6.95vw;
   position: absolute;
   margin-left: 4.8vw;
   margin-top: -10.5vw;
+}
+.logo-kids img {
+  width: 8.13vw;
+  height: 8.13vw;
 }
 .adults {
   margin-top: 15.5vw;
@@ -531,18 +553,18 @@ a:hover:not(#main-page, #link, .dropdown-content a, #link1, #visit) {
   position: relative;
   margin-top: -7vw;
 }
-.line1 {
+#line1 {
   margin-top: 4.3vw;
   margin-left: -48.5vw;
   position: absolute;
   display: flex;
 }
-.line1 path {
+/* #line1 path {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   animation: dash 2.5s linear forwards;
   display: flex;
-}
+} */
 .line2 {
   margin-top: 8vw;
   margin-left: -25.5vw;
@@ -617,6 +639,12 @@ input::placeholder {
   position: absolute;
   margin-left: 46.9vw;
   margin-top: 9vw;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.follow-up:hover {
+  background-color: #0021da;
+  color: #0021da;
 }
 .separator2 {
   width: 57.58vw;
@@ -720,22 +748,15 @@ input::placeholder {
 
 /* --------------------------------------ABOUT US */
 /* SECTION 1 */
-.animation-values {
+.banner {
   width: 100vw;
-  height: 56.41vw;
+  height: 35.5vw;
   display: flex;
   overflow: hidden;
 }
-.anima-background {
-  width: 100vw;
-  height: 49.22vw;
-  margin-top: 4vw;
-}
-
-/* SECTION 2 */
 .description {
   width: 100vw;
-  height: 57.22vw;
+  height: 56.22vw;
   display: flex;
   overflow: hidden;
   position: relative;
@@ -744,27 +765,143 @@ input::placeholder {
   font-family: 'Inter Semibold';
   font-size: 50px;
   color: black;
-  margin: 0 0 0 1.56vw;
+  margin: 2vw 0 0 1.56vw;
 }
 .text-about {
   font-family: 'Inter';
   font-size: 20px;
   color: black;
-  margin-top: 5.7vw;
+  margin-top: 6.8vw;
   margin-left: -27.15vw;
+  line-height: 1.5vw;
 }
 .text-about b {
   font-family: 'Inter Bold';
 }
 .roof img {
-  width: 96.88vw;
+  width: 100%;
   height: 35.31vw;
   position: absolute;
-  margin-left: -53.6vw;
-  margin-top: 16vw;
+  margin-left: 0vw;
+  margin-top: 0vw;
+}
+.values {
+  margin-top: 5.5vw;
+}
+.block1,
+.block2,
+.block3,
+.block4,
+.block5 {
+  width: 12.34vw;
+  height: 3.83vw;
+  background-color: transparent;
+  border: #414141 solid 0.5px;
+  font-family: 'Inter';
+  font-size: 1.56vw;
+  align-content: center;
+  color: #414141;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.block1:hover,
+.block2:hover,
+.block3:hover,
+.block4:hover,
+.block5:hover {
+  background-color: #0026ff;
+  color: white;
+  border: none;
 }
 
-/* SECTION 3 */
+.block6 {
+  width: 24.84vw;
+  height: 5.7vw;
+  background-color: transparent;
+  border: #414141 solid 0.5px;
+  font-family: 'Inter Semibold';
+  font-size: 2.73vw;
+  align-content: center;
+  padding-left: 3.5vw;
+  color: #414141;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.block6:hover {
+  background-color: #001cb9;
+  color: white;
+}
+.block1,
+.block2 {
+  padding: 0vw 2.3vw;
+}
+.block2 {
+  margin-left: 42vw;
+  margin-top: -4vw;
+  position: absolute;
+}
+.block3 {
+  margin-top: -4vw;
+  margin-left: 84.4vw;
+  position: absolute;
+  padding: 0vw 2.8vw;
+}
+.block4 {
+  margin-left: 12.3vw;
+  margin-top: 24vw;
+  position: absolute;
+  padding: 0vw 2.55vw;
+}
+.block5 {
+  margin-left: 72vw;
+  margin-top: 24vw;
+  position: absolute;
+  padding: 0vw 2.7vw;
+}
+.block6 {
+  margin-top: 10.5vw;
+  margin-left: 36vw;
+  position: absolute;
+}
+.connect1 {
+  width: 30vw;
+  position: absolute;
+  margin-top: -2.1vw;
+  margin-left: 12.13vw;
+}
+.connect2 {
+  width: 30.5vw;
+  position: absolute;
+  margin-top: -2.1vw;
+  margin-left: 54.1vw;
+}
+.connect3 {
+  width: 5.9vw;
+  height: 28vw;
+  margin-top: -0.95vw;
+  margin-left: 6.6vw;
+}
+.connect4 {
+  width: 6vw;
+  height: 28vw;
+  margin-top: -0.95vw;
+  margin-left: 71.2vw;
+}
+.connect5 {
+  width: 23vw;
+  height: 10.4vw;
+  margin-top: 15.95vw;
+  margin-left: -66.15vw;
+  position: absolute;
+}
+.connect6 {
+  width: 23vw;
+  height: 10.4vw;
+  margin-top: 15.97vw;
+  margin-left: -40.35vw;
+  position: absolute;
+}
+/* SECTION 2 */
 .content-about {
   width: 100vw;
   height: 90vw;
@@ -806,6 +943,7 @@ input::placeholder {
   position: absolute;
   margin-top: 6vw;
   margin-left: 35vw;
+  line-height: 1.3vw;
 }
 .room-dialogue {
   width: 31.87vw;
@@ -836,6 +974,7 @@ input::placeholder {
   font-size: 16px;
   position: absolute;
   margin-left: 35vw;
+  line-height: 1.3vw;
 }
 .room-mind {
   width: 21.56vw;
@@ -865,6 +1004,7 @@ input::placeholder {
   font-size: 16px;
   position: absolute;
   margin-left: 35vw;
+  line-height: 1.3vw;
 }
 .room-becoming {
   width: 31.87vw;
@@ -961,6 +1101,7 @@ p {
 /* Items */
 .card1 {
   margin-left: 1.2vw;
+  cursor: pointer;
 }
 .item1 {
   width: 24.77vw;
@@ -1126,9 +1267,10 @@ p {
 }
 .modal {
   display: none;
+  width: 100%;
+  margin-top: -12vw;
+  margin-left: -77vw;
   position: fixed;
-  z-index: 1;
-  overflow: auto;
 }
 .cart {
   width: 6.25vw;
@@ -1552,6 +1694,7 @@ select:invalid {
   background-color: #0021da;
   color: #dfdfdf;
   transform: scale(0.89);
+  text-decoration: underline;
 }
 .block-long {
   width: 37.9vw;
