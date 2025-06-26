@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Для взрослых</title>
     <link rel="stylesheet" href="stylesheets/style.css" />
-    <script src="/javascript/script.js"></script>
+    <script src="javascript/adults.js"></script>
   </head>
   <body>
-     <nav>
+    <!-- навигация -->
+    <nav>
       <div class="nav-background"></div>
       <div class="pages">
         <a href="about.html">[ О НАС ]</a>
         <a href="merch.html">[ МЕРЧ ]</a>
         <a href="tickets.html">[ БИЛЕТЫ ]</a>
-        <a id="main-page" href="index.html"><img src="images/logo-main.svg" alt=""></a>
+        <a id="main-page" href="index.html"
+          ><img src="images/logo-main.svg" alt=""
+        /></a>
         <a href="adult.html">[ ОБРАЗОВАНИЕ ]</a>
         <div class="dropdown">
           <p class="dropbtn">[ МУЗЕЙ ▾ ]</p>
@@ -26,5 +29,110 @@
         <p class="english">[ EN ]</p>
       </div>
     </nav>
+    <!-- секция 1 -->
+    <section class="adults-info">
+      <div class="info">
+        <div class="text-info">
+          <p class="adults-header">Образование<span>.Взрослым</span></p>
+          <p class="adults-description">
+            Для нас образование — это не только передача знаний. Это путь <br />
+            к лучшему пониманию мира и себя в нём. <br />
+            <br />
+            Мы создаём программы, в которых каждый может переосмыслить <br />
+            взаимодействие с технологиями и открыть в нём нечто человечное.
+            <br />
+            Мы верим, что осознанность начинается с вопросов — и помогаем <br />
+            эти вопросы задавать.
+          </p>
+        </div>
+        <div class="switch">
+          <img class="logo-adults" src="images/logo-adults.svg" alt="" />
+          <button id="switchKids" class="switch-to-kids">
+            <a href="kids.html">[ Humanization для детей ]</a>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- секция 2 -->
+    <!-- события и тонна флип карточек -->
+    <section class="events-adults">
+      <p class="header2-adults">События</p>
+      <!-- событие 1 -->
+      <div id="poster3" class="frame-1">
+        <div class="card__inner">
+          <div class="card__face card__face--front">
+            <img src="images/poster3.jpg" alt="" />
+          </div>
+          <div class="card__face card__face--back">
+            <div class="card__content">
+              <div class="card__text">
+                <p>
+                  Цикл лекций, <br />
+                  направленных <br />
+                  на раскрытие чувств, <br />переживаний <br />
+                  и осознанности в мире, <br />
+                  где даже машины <br />
+                  начинают меняться. <br />
+                  Погружаемся в диалог <br />
+                  между человеком <br />
+                  и технологией.
+                </p>
+              </div>
+              <div class="card__logo">
+                <img src="images/adult-symbol.svg" alt="" class="adult" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- событие 2 -->
+      <div id="poster4" class="frame-2">
+        <div class="card__inner-2">
+          <div class="card__face2 card__face--front">
+            <img src="images/poster4.jpg" alt="" />
+          </div>
+          <div class="card__face card__face--back2">
+            <div class="card__content2">
+              <div class="card__text2">
+                <p>
+                  Обсуждаем, почему тревога <br />
+                  и уязвимость — <br />не слабость, а часть <br />
+                  живого. ИИ с чувствами: <br />
+                  утопия или новая <br />норма?
+                </p>
+              </div>
+              <div class="card__logo2">
+                <img src="images/adult-symbol.svg" alt="" class="adult" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="event1" class="event1">
+        <div class="name1"><p>Серия лекций «Откройся»</p></div>
+        <div class="date1"><p>16.12.30</p></div>
+        <div id="tags1" class="tags">
+          <div class="lecture">
+            <p>Лекция</p>
+          </div>
+          <div class="mind">
+            <p>Разум</p>
+          </div>
+        </div>
+      </div>
+      <div id="event2" class="event2">
+        <div class="name2"><p>Эмоции это нормально</p></div>
+        <div class="date2"><p>10.07.25</p></div>
+        <div id="tags2" class="tags">
+          <div class="lecture">
+            <p id="mk">Мастер-класс</p>
+          </div>
+          <div class="psychology">
+            <p>Психология</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

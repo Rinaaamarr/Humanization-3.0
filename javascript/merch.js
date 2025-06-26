@@ -80,7 +80,6 @@ function windowOpen5() {
     modal.classList.toggle('visible')
   })
 }
-
 function counter() {
   let cartCount = 0
   const cartCountElement = document.getElementById('count')
