@@ -39,7 +39,8 @@ a:not(
     #visit,
     #switchKids a,
     #error,
-    #switchAdults a
+    #switchAdults a,
+    .research a
   ) {
   text-decoration: none;
   color: black;
@@ -56,7 +57,8 @@ a:hover:not(
     #visit,
     #switchKids a,
     #error,
-    #switchAdults a
+    #switchAdults a,
+    .research a
   ) {
   box-shadow: inset 163px 0 0 0 black;
   color: white;
@@ -2258,14 +2260,167 @@ select:invalid {
   margin-left: -23.8vw;
 }
 #symbolKids1 {
-padding-top: 14vw;
+  padding-top: 14vw;
 }
 #symbolKids2 {
-padding-top: 18.9vw;
+  padding-top: 18.9vw;
 }
 #symbolKids3 {
   padding-top: 9.5vw;
 }
 #symbolKids4 {
   padding-top: 14.4vw;
+}
+
+/* -------------------------------------- EMPLOYEES */
+/* SECTION 1 */
+.ceo {
+  width: 100vw;
+  height: 43vw;
+  overflow: hidden;
+  padding: 2vw 2vw;
+}
+.our-ceo,
+.our-employees {
+  font-family: 'Inter Semibold';
+  font-size: 4.69vw;
+  color: black;
+}
+.box {
+  width: 31.48vw;
+  height: 23.3vw;
+  background-color: transparent;
+  border: black solid 1px;
+  position: relative;
+}
+.nameA,
+.nameB,
+.nameC,
+.nameD,
+.nameE {
+  font-family: 'Inter Semibold';
+  font-size: 3.44vw;
+  color: black;
+  padding: 1vw;
+}
+.about-a,
+.about-b,
+.about-c,
+.about-d,
+.about-e {
+  font-family: 'Inter';
+  font-size: 1.09vw;
+  color: black;
+  text-wrap: nowrap;
+  padding: 1vw;
+  line-height: 1.3vw;
+}
+.who1,
+.who2 {
+  font-family: 'Inter Semibold';
+  font-size: 2.73vw;
+  color: black;
+  padding: 1vw;
+  margin-top: -7vw;
+  margin-left: 16vw;
+  text-wrap: nowrap;
+}
+.fingerprint-robo-1,
+.fingerprint-robo-2,
+.fingerprint-human-1 {
+  width: 7.36vw;
+  height: 7.36vw;
+  margin-top: -0.5vw;
+}
+.research {
+  width: 31.48vw;
+  height: 3.67vw;
+  background-color: black;
+  border: none;
+  font-family: 'Inter Semibold';
+  font-size: 1.56vw;
+  -webkit-text-fill-color: white;
+  text-align: center;
+  position: absolute;
+  margin-top: 3vw;
+  transition: all 0.3s ease-in-out;
+}
+.research a {
+  text-decoration: none;
+  cursor: pointer;;
+}
+.research:hover {
+  background-color: #0026ff;
+  transform: scale(0.9);
+}
+.image1,
+.image2,
+.image3,
+.image4,
+.image5 {
+  width: 26.72vw;
+  height: 26.72vw;
+}
+.blocks {
+  display: flex;
+  flex-direction: row;
+  gap: 3vw;
+  padding-top: 3vw;
+  padding-left: 30vw;
+}
+
+/* SECTION 2 */
+.employees-1 {
+  width: 100vw;
+  height: 66vw;
+  overflow: hidden;
+  padding: 2vw 2vw;
+}
+.box2 {
+  width: 31.48vw;
+  height: 23.3vw;
+  background-color: transparent;
+  border: black solid 1px;
+  position: relative;
+  margin-left: -29.8vw;
+}
+.content {
+  padding: 1vw 1vw 1vw 1vw;
+}
+.who3 {
+  font-family: 'Inter Semibold';
+  font-size: 2.73vw;
+  color: black;
+  padding: 1vw;
+  margin-top: -7vw;
+  margin-left: 13vw;
+  text-wrap: nowrap;
+}
+.fingerprint-human-1 {
+  width: 9.36vw;
+  height: 10.36vw;
+  margin-top: -1vw;
+}
+#fingerprint-robo-1 {
+  margin-top: -0.7vw;
+}
+
+/* SECTION 3 */
+.employees-2 {
+  width: 100vw;
+  height: 66vw;
+  overflow: hidden;
+  padding: 0 2vw;
+}
+#box2 {
+  text-wrap: nowrap;
+  width: 35vw;
+  height: 23.3vw;
+  background-color: transparent;
+  border: black solid 1px;
+  position: relative;
+  padding: 1vw 0;
+}
+#blocks {
+  margin-left: 8.4vw;
 }
