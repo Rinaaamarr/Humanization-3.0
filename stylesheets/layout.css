@@ -38,7 +38,8 @@ a:not(
     #link1,
     #visit,
     #switchKids a,
-    #error
+    #error,
+    #switchAdults a
   ) {
   text-decoration: none;
   color: black;
@@ -54,7 +55,8 @@ a:hover:not(
     #link1,
     #visit,
     #switchKids a,
-    #error
+    #error,
+    #switchAdults a
   ) {
   box-shadow: inset 163px 0 0 0 black;
   color: white;
@@ -432,8 +434,8 @@ a:hover:not(
   margin-top: -10.5vw;
 }
 .logo-kids img {
-  width: 8.13vw;
-  height: 8.13vw;
+  width: 15.7vw;
+  height: 15.7vw;
 }
 .adults {
   margin-top: 15.5vw;
@@ -443,11 +445,11 @@ a:hover:not(
   transform: scale(1.1);
 }
 .logo-kids {
-  width: 8.13vw;
-  height: 8.13vw;
+  width: 15.7vw;
+  height: 15.7vw;
   position: absolute;
-  margin-left: 5.5vw;
-  margin-top: 10.5vw;
+  margin-left: 10.5vw;
+  margin-top: 0.5vw;
 }
 .link-kids {
   position: absolute;
@@ -2083,24 +2085,29 @@ select:invalid {
   gap: 3vw;
   padding: 3vw 3vw;
 }
-.adults-info {
+.adults-info,
+.kids-info {
   width: 100%;
   height: 27vw;
   overflow: hidden;
 }
-.adults-header {
+.adults-header,
+.kids-header {
   font-family: 'Inter Semibold';
   font-size: 4.69vw;
   color: black;
 }
-.adults-header span {
+.adults-header span,
+.kids-header span {
   color: #0026ff;
 }
-.adults-description {
+.adults-description,
+.kids-description {
   font-family: 'Inter';
   font-size: 1.56vw;
   color: black;
   line-height: 1.5vw;
+  text-wrap: nowrap;
 }
 .switch {
   display: flex;
@@ -2115,7 +2122,8 @@ select:invalid {
   position: absolute;
   margin-left: 6.5vw;
 }
-#switchKids {
+#switchKids,
+#switchAdults {
   width: 31.02vw;
   height: 3.28vw;
   font-family: 'Inter Semibold';
@@ -2125,21 +2133,26 @@ select:invalid {
   margin-right: 6vw;
   margin-top: 15.6vw;
   transition: all 0.3s ease-in-out;
+  text-wrap: nowrap;
 }
-#switchKids:hover {
+#switchKids:hover,
+#switchAdults:hover {
   transform: scale(1.05);
 }
-#switchKids a {
+#switchKids a,
+#switchAdults a {
   color: black;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
-#switchKids a:hover {
+#switchKids a:hover,
+#switchAdults a:hover {
   color: #0026ff;
 }
 
 /* SECTION 2 */
-.events-adults {
+.events-adults,
+.events-kids {
   width: 100vw;
   height: 138vw;
   overflow: hidden;
@@ -2229,4 +2242,30 @@ select:invalid {
 }
 #visit a {
   cursor: pointer;
+}
+
+/* --------------------------------------KIDS EDUCATION */
+/* SECTION 1 */
+#switchAdults {
+  margin-top: 18vw;
+}
+/* SECTION 2 */
+#talk {
+  margin-left: 1vw;
+  text-wrap: nowrap;
+}
+#law {
+  margin-left: -23.8vw;
+}
+#symbolKids1 {
+padding-top: 14vw;
+}
+#symbolKids2 {
+padding-top: 18.9vw;
+}
+#symbolKids3 {
+  padding-top: 9.5vw;
+}
+#symbolKids4 {
+  padding-top: 14.4vw;
 }
