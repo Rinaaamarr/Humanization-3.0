@@ -31,7 +31,15 @@ nav {
   margin-top: -6.3vw;
   align-items: center;
 }
-a:not(#main-page, #link, .dropdown-content a, #link1, #visit, #switchKids a) {
+a:not(
+    #main-page,
+    #link,
+    .dropdown-content a,
+    #link1,
+    #visit,
+    #switchKids a,
+    #error
+  ) {
   text-decoration: none;
   color: black;
   box-shadow: inset 0 0 0 0 black;
@@ -45,7 +53,8 @@ a:hover:not(
     .dropdown-content a,
     #link1,
     #visit,
-    #switchKids a
+    #switchKids a,
+    #error
   ) {
   box-shadow: inset 163px 0 0 0 black;
   color: white;
@@ -276,7 +285,9 @@ a:hover:not(
   margin-top: -57vw;
 }
 .frame-1,
-.frame-2 {
+.frame-2,
+.frame-3,
+.frame-4 {
   width: 33.81vw;
   height: 44.61vw;
   color: transparent;
@@ -309,7 +320,9 @@ a:hover:not(
   margin-left: -0.03vw;
 }
 .card__inner,
-.card__inner-2 {
+.card__inner-2,
+.card__inner3,
+.card__inner4 {
   width: 100%;
   height: 100%;
   transition: transform 1s;
@@ -317,24 +330,32 @@ a:hover:not(
   position: relative;
 }
 .card__inner.is-flipped,
-.card__inner-2.is-flipped {
+.card__inner-2.is-flipped,
+.card__inner3.is-flipped,
+.card__inner4.is-flipped {
   transform: rotateY(180deg);
 }
 .card__face,
-.card__face2 {
+.card__face2,
+.card__face3,
+.card__face4 {
   position: absolute;
   width: 31.09vw;
   height: 44.61vw;
 }
 .card__face--front img,
-.card__face--front2 img {
+.card__face--front2 img,
+.card__face--front3 img,
+.card__face--front4 img {
   width: 31.15vw;
   height: 44.6vw;
   margin-left: 1.25vw;
   margin-top: -0.07vw;
 }
 .card__face--back,
-.card__face--back2 {
+.card__face--back2,
+.card__face--back3,
+.card__face--back4 {
   width: 100%;
   height: 100%;
   background-color: white;
@@ -343,12 +364,16 @@ a:hover:not(
   overflow: hidden;
 }
 .card__content,
-.card__content2 {
+.card__content2,
+.card__content3,
+.card__content4 {
   width: 100%;
   height: 100%;
 }
 .card__text,
-.card__text2 {
+.card__text2,
+.card__text3,
+.card__text4 {
   font-family: 'Inter Medium';
   font-size: 35px;
   color: black;
@@ -368,6 +393,20 @@ a:hover:not(
   position: absolute;
   padding-left: 22.66vw;
   padding-top: 13.55vw;
+}
+.card__logo3 {
+  width: 8.28vw;
+  height: 8.28vw;
+  position: absolute;
+  padding-left: 22.8vw;
+  padding-top: 10.55vw;
+}
+.card__logo4 {
+  width: 8.28vw;
+  height: 8.28vw;
+  position: absolute;
+  padding-left: 22.66vw;
+  padding-top: 6vw;
 }
 
 #link {
@@ -1609,6 +1648,7 @@ p {
 .count {
   position: absolute;
   font-family: 'Inter Semibold';
+  text-align: center;
   font-size: 18px;
   color: white;
   margin-left: 2.3vw;
@@ -2101,7 +2141,7 @@ select:invalid {
 /* SECTION 2 */
 .events-adults {
   width: 100vw;
-  height: 150vw;
+  height: 138vw;
   overflow: hidden;
 }
 .header2-adults {
@@ -2112,10 +2152,23 @@ select:invalid {
 }
 #poster3 {
   margin-left: 3.4vw;
+  cursor: pointer;
 }
 #poster4 {
   margin-top: -44.65vw;
   margin-left: 39vw;
+  cursor: pointer;
+}
+#poster5 {
+  margin-left: 27vw;
+  margin-top: 12vw;
+  position: absolute;
+  cursor: pointer;
+}
+#poster6 {
+  margin-top: 12vw;
+  position: absolute;
+  margin-left: 62.8vw;
 }
 #event1 {
   margin-left: 72.3vw;
@@ -2153,7 +2206,27 @@ select:invalid {
   margin-left: 72.85vw;
   margin-top: -49.5vw;
 }
+#event3 {
+  margin-left: 95.5vw;
+  margin-top: 56.7vw;
+}
+#event4 {
+  margin-left: 96.65vw;
+  margin-top: 56.7vw;
+}
 #mk {
   margin-left: 0vw;
   text-wrap: nowrap;
+}
+#visit:hover {
+  text-decoration: underline;
+}
+.button-move,
+#block-long,
+#block-short,
+#visit {
+  margin-top: 60vw;
+}
+#visit a {
+  cursor: pointer;
 }
