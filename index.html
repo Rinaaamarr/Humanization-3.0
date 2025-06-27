@@ -6,7 +6,7 @@
     <title>Humanization</title>
     <link rel="stylesheet" href="stylesheets/style.css" />
     <script src="javascript/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   </head>
   <body>
     <!-- навигация -->
@@ -42,12 +42,8 @@
       </div>
       <p class="heading1">Humanization</p>
       <img class="tire" src="images/tire.svg" alt="" />
-      <div class="words">
-        <div class="word1">Сознание</div>
-        <div class="word2">Диалог</div>
-        <div class="word3">Механизм</div>
-        <div class="word4">Связь</div>
-        <div class="word5">Мы</div>
+      <div id="words" class="words">
+        <div class="word1">Будущее</div>
       </div>
       <p class="text-1">
         Центр толерантности, где <b>люди</b> <br />
@@ -152,7 +148,7 @@
           <a id="link" class="link-adults" href="adult.html">[ ВЗРОСЛЫМ ]</a>
         </div>
         <div class="kids">
-          <div class="logo-kids">
+          <div id="logo-kids" class="logo-kids">
             <img src="images/kids-symbol.svg" alt="" />
           </div>
           <a id="link" class="link-kids" href="kids.html">[ ДЕТЯМ ]</a>
@@ -234,7 +230,7 @@
         value=""
         placeholder="Введите ваш email"
       />
-      <button class="follow-up">Подписаться —></button>
+      <button class="follow-up"><a href="followed.html">Подписаться —></a></button>
       <div class="separator2"><img src="images/separator2.svg" alt="" /></div>
       <!-- подвал -->
       <div class="basement">

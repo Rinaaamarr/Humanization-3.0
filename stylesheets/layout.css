@@ -4,6 +4,9 @@
 body .visible {
   display: block;
 }
+a {
+  cursor: pointer;
+}
 
 /* --------------------------------------NAV BAR */
 nav {
@@ -40,7 +43,10 @@ a:not(
     #switchKids a,
     #error,
     #switchAdults a,
-    .research a
+    .research a,
+    .follow-up a .closeFollow a,
+    #submit a,
+    .back-to-main a
   ) {
   text-decoration: none;
   color: black;
@@ -58,7 +64,11 @@ a:hover:not(
     #switchKids a,
     #error,
     #switchAdults a,
-    .research a
+    .research a,
+    .follow-up a,
+    .closeFollow a,
+    #submit a,
+    .back-to-main a
   ) {
   box-shadow: inset 163px 0 0 0 black;
   color: white;
@@ -158,7 +168,7 @@ a:hover:not(
   margin-left: 5.2vw;
 }
 .mouse-parallax-image-1 {
-  background-image: url('../images/image1-1.svg');
+  background-image: url('../images/image1-1.jpg');
   width: 18.13vw;
   height: 11.25vw;
   left: -10%;
@@ -235,23 +245,7 @@ a:hover:not(
 }
 .word1 {
   margin-top: -13vw;
-  margin-left: 38vw;
-}
-.word2 {
-  margin-top: -4.4vw;
-  margin-left: 42vw;
-}
-.word3 {
-  margin-top: -4.4vw;
-  margin-left: 38.3vw;
-}
-.word4 {
-  margin-top: -4.4vw;
-  margin-left: 43vw;
-}
-.word5 {
-  margin-top: -4.4vw;
-  margin-left: 45.3vw;
+  margin-left: 40vw;
 }
 .text-1 {
   font-family: 'Inter';
@@ -436,8 +430,11 @@ a:hover:not(
   margin-top: -10.5vw;
 }
 .logo-kids img {
-  width: 15.7vw;
-  height: 15.7vw;
+  width: 8.13vw;
+  height: 6.95vw;
+  position: absolute;
+  margin-left: -5vw;
+  margin-top: 10vw;
 }
 .adults {
   margin-top: 15.5vw;
@@ -603,12 +600,12 @@ a:hover:not(
   position: absolute;
   display: flex;
 }
-/* #line1 path {
+#line1 path {
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   animation: dash 2.5s linear forwards;
   display: flex;
-} */
+}
 .line2 {
   margin-top: 8vw;
   margin-left: -25.5vw;
@@ -1690,8 +1687,9 @@ p {
   font-family: 'Inter';
   font-size: 20px;
   color: black;
-  margin-top: 4.5vw;
+  margin-top: 5vw;
   margin-left: -26.3vw;
+  line-height: 1.5vw;
 }
 .people-buy {
   width: 42.97vw;
@@ -1835,6 +1833,10 @@ select:invalid {
   margin-top: 5.5vw;
   transition: all 0.3s ease-in-out;
 }
+#submit a {
+  text-decoration: none;
+  color: white;
+}
 #submit:hover {
   background-color: #0026ff;
 }
@@ -1862,7 +1864,7 @@ select:invalid {
   font-family: 'Inter Semibold';
   font-size: 60px;
   color: black;
-  margin-top: -13vw;
+  margin-top: -19vw;
   margin-left: 1.2vw;
 }
 .header-factory span {
@@ -1872,121 +1874,11 @@ select:invalid {
   font-family: 'Inter';
   font-size: 20px;
   color: black;
-  margin-top: 4.5vw;
+  margin-top: 0.5vw;
   margin-left: -56.6vw;
 }
 
-/* SECTION 2 */
-#steps {
-  width: 100vw;
-  height: 70vw;
-  display: flex;
-  overflow: hidden;
-}
-.steps p:not(.step-1) {
-  font-family: 'Inter Semibold';
-  font-size: 30px;
-  color: black;
-}
-.steps span {
-  color: #0026ff;
-}
-.step1-img {
-  background-image: url('../images/step1.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 31.41vw;
-  height: 18.98vw;
-  margin-left: 1.2vw;
-  position: relative;
-  transition: all 0.2s ease-in-out;
-}
-.step1 p {
-  position: absolute;
-  margin-left: 33vw;
-  margin-top: -2.08vw;
-}
-.step1-img:hover {
-  background: #3e3e6b;
-  border: black solid 1px;
-}
-.step2-img {
-  background-image: url('../images/step2.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 31.56vw;
-  height: 20.7vw;
-  margin-left: 67.5vw;
-  position: relative;
-  transition: all 0.2s ease-in-out;
-}
-.step2-img:hover {
-  background: #3e3e6b;
-  border: black solid 1px;
-}
-.step2 p {
-  position: absolute;
-  margin-left: 57.5vw;
-  margin-top: -2.08vw;
-}
-.step3 {
-  margin-top: -35vw;
-}
-.step3-img {
-  background-image: url('../images/step3.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 31.41vw;
-  height: 18.05vw;
-  margin-left: 1.2vw;
-  margin-top: 25vw;
-  position: relative;
-  transition: all 0.2s ease-in-out;
-}
-.step3 p {
-  position: absolute;
-  margin-left: 33vw;
-  margin-top: -2.17vw;
-}
-.step3-img:hover {
-  background: #3e3e6b;
-  border: black solid 1px;
-}
-.step4-img {
-  background-image: url('../images/step4.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 31.41vw;
-  height: 20.39vw;
-  margin-left: 67.5vw;
-  position: relative;
-  transition: all 0.2s ease-in-out;
-}
-.step4 p {
-  position: absolute;
-  margin-left: 57.5vw;
-  margin-top: -2.08vw;
-}
-.step4-img:hover {
-  background: #3e3e6b;
-  border: black solid 1px;
-}
-.step-1 {
-  text-align: center;
-  font-family: 'Inter';
-  font-size: 14px;
-  color: white;
-  margin-left: 6vw;
-  margin-top: -10vw;
-  position: absolute;
-  opacity: 0;
-  z-index: 1;
-}
-.step-1:hover {
-  opacity: 1;
-}
-
-/* SECTION 3  */
+/* SECTION 2  */
 .quote-factory {
   width: 100vw;
   height: 37.5vw;
@@ -1998,12 +1890,12 @@ select:invalid {
   height: 35.16vw;
   margin-left: 8vw;
   position: relative;
-  margin-top: 2vw;
+  margin-top: 0.5vw;
 }
 .quotation {
   position: absolute;
   margin-left: 32vw;
-  margin-top: 4vw;
+  margin-top: 3vw;
 }
 .cite {
   font-family: 'Inter';
@@ -2011,10 +1903,10 @@ select:invalid {
   color: black;
   position: absolute;
   margin-left: 35vw;
-  margin-top: 9vw;
+  margin-top: 8vw;
 }
 
-/* SECTION 4 */
+/* SECTION 3 */
 .finish-partner {
   width: 100vw;
   height: 46.88vw;
@@ -2333,7 +2225,7 @@ select:invalid {
   margin-top: -0.5vw;
 }
 .research {
-  width: 31.48vw;
+  width: 30.6vw;
   height: 3.67vw;
   background-color: black;
   border: none;
@@ -2347,7 +2239,7 @@ select:invalid {
 }
 .research a {
   text-decoration: none;
-  cursor: pointer;;
+  cursor: pointer;
 }
 .research:hover {
   background-color: #0026ff;
@@ -2423,4 +2315,156 @@ select:invalid {
 }
 #blocks {
   margin-left: 8.4vw;
+}
+/* __________________ */
+.follow-up a {
+  text-decoration: none;
+}
+.thanksFollow {
+  width: 100%;
+  height: 100%;
+}
+.white-card {
+  width: 98vw;
+  height: 46vw;
+  background-color: white;
+  border: black solid 1px;
+  margin: 1vw 1vw 1vw 1vw;
+}
+.thx1,
+.thx2 {
+  text-align: center;
+}
+.thx1 {
+  font-family: 'Inter Semibold';
+  font-size: 4.69vw;
+  color: #0026ff;
+  padding-top: 3vw;
+}
+.thx2 {
+  font-family: 'Inter';
+  font-size: 2.34vw;
+  color: black;
+  padding-top: 2vw;
+}
+.rays {
+  width: 90%;
+  height: 90%;
+  margin-top: -26vw;
+  margin-left: 4.5vw;
+}
+.person-jump {
+  margin-top: 0.5vw;
+  margin-left: 40vw;
+}
+.content-thx {
+  margin-top: 6vw;
+}
+.closeFollow {
+  background-color: transparent;
+  border: none;
+  font-family: 'Inter Medium';
+  font-size: 6vw;
+  color: black;
+  cursor: pointer;
+  position: absolute;
+  margin-top: -36.5vw;
+  margin-left: -90.5vw;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.closeFollow a {
+  text-decoration: underline;
+}
+.closeFollow:hover {
+  cursor: pointer;
+  transform: scale(0.95);
+}
+
+/* -------------------------------------- 404 */
+.error {
+  width: 100vw;
+  height: 55vw;
+}
+.grid-back {
+  width: 100vw;
+  height: 120vh;
+  align-self: center;
+  position: relative;
+}
+.backword {
+  font-family: 'Inter Light';
+  font-size: 45.31vw;
+  color: #f3eeee;
+  position: absolute;
+  margin-top: -59.7vw;
+  margin-left: 7.5vw;
+}
+.oops {
+  font-family: 'Inter Semibold';
+  font-size: 5.47vw;
+  color: black;
+  padding: 2.7vw;
+  margin-top: -56.5vw;
+  position: absolute;
+  z-index: 3;
+}
+.oops span {
+  color: #0026ff;
+}
+.underline {
+  margin-top: -42vw;
+  margin-left: 28vw;
+  position: absolute;
+  z-index: 3;
+}
+.try-again {
+  font-family: 'Inter';
+  font-size: 2.58vw;
+  color: black;
+  margin-top: -40vw;
+  position: absolute;
+  z-index: 3;
+  margin-left: 2.7vw;
+  line-height: 2.5vw;
+}
+.underline path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 2.5s linear forwards;
+}
+.back-to-main {
+  width: 38.75vw;
+  height: 5vw;
+  background-color: #0026ff;
+  font-family: 'Inter Bold';
+  font-size: 2.73vw;
+  border: none;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  z-index: 3;
+  margin-top: -22.1vw;
+  margin-left: 41.4vw;
+}
+.back-to-main a {
+  text-decoration: none;
+  color: white;
+}
+.back-to-main:hover {
+  background-color: #0021da;
+  color: #dfdfdf;
+  transform: scale(0.9);
+}
+.arrow1 {
+  margin-top: -21vw;
+  margin-left: 19vw;
+  position: absolute;
+  z-index: 3;
+}
+.arrow1 path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 2.5s linear forwards;
+  animation-delay: 0.5s;
 }
